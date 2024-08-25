@@ -109,7 +109,7 @@ const server = new ApolloServer({
 
 // Start the server
 if (process.argv[1] === new URL(import.meta.url).pathname) {
-	server.listen().then(({ url }) => {
+	server.listen(8080).then(({ url }) => {
 		console.log(`🚀 Server ready at ${url}`);
 	});
 }
